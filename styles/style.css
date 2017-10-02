@@ -1,0 +1,132 @@
+body {
+	background-color: #741a1a
+}
+
+header {
+	background-image: url(../images/FFXIVStormblood.jpg);
+	background-size: cover;
+	background-position: center;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	text-align: center;
+}
+
+h1 {
+	color: #741a1a;
+	font-weight: 600;
+	font-size: 2.4em;
+}
+
+h2 {
+	color: #741a1a;
+	font-weight: 600;
+	font-size: 1.6em;
+	padding-top: 12px;
+}
+
+h3 {
+	color: #741a1a;
+	font-weight: 600; 
+	font-size: 1.3em;
+	padding-bottom: 12px;
+}
+
+a:hover {
+	color: #741a1a;
+}
+
+.content-wrapper {
+	padding-top: 24px;
+	padding-bottom: 24px;
+	background-color: #fff;
+}
+
+/* Tabs */
+.job-tabs {
+	padding-top: 12px;
+	margin-bottom: 48px;
+	border-bottom: 1px solid #cccccc;
+}
+
+.job-tabs__list {
+	list-style-type: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+.job-tabs__list-item {
+	display: inline-block;
+	border-top: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+	background-color: #f5f5f5;
+	margin-bottom: -1px;
+}
+
+.job-tabs__list-item:first-of-type {
+	border-top-left-radius: 0.8em;
+	border-left: 1px solid #cccccc;
+}
+
+.job-tabs__list-item:last-of-type {
+	border-top-right-radius: 0.8em;
+}
+
+.activeTab {
+	display: inline-block;
+	border-top: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+	border-bottom: 1px solid #fff;
+	background-color: #fff;
+}
+
+.job-tabs__link {
+	padding: 10px 12px;
+	display: block;
+	color: #333333;
+}
+
+.job-tabs__link:hover {
+	color: #333333;
+}
+
+.activeTab > .job-tabs__link {
+	color: #707070;
+}
+
+/* Side Menu */
+.side-menu {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.side-menu__item {
+	border-top: 1px solid #cccccc;
+	padding: 12px;
+	font-size: 0.9em;
+}
+
+.side-menu__item:last-of-type {
+	border-bottom: 1px solid #cccccc;
+}
+
+.activeSideMenu {
+	background-color: #f5f5f5;
+}
+
+.side-menu__title {
+	color: #741a1a;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Job description section */
+.description {
+	padding-left: 30px;
+}
+
+/* Footer */
+footer {
+	padding-top: 24px;
+	padding-bottom: 12px;
+	color: #fff;
+}

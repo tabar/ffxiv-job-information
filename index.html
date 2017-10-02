@@ -1,0 +1,57 @@
+<!doctype html>
+<html ng-app="stormbloodApp">
+	<head>
+		<title>FFXIV characters</title>
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<link rel="stylesheet" href="styles/style.css">
+		<!-- Javascript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+		<script src="js/app.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<img src="images/logo.png" alt="stormblood" width="600">
+			</div>
+		</header>
+		<div class="content-wrapper">
+			<div class="container" ng-controller="stormbloodCtrl">
+				<!-- Tabs -->
+				<div class="job-tabs">
+					<ul class="job-tabs__list">
+						<li ng-class="{activeTab : activeTitle == title}" class="job-tabs__list-item" ng-repeat="title in titles">
+							<a ng-click="showJobs(title);" class="job-tabs__link" href="">{{title}}</a>
+						</li>
+					</ul>
+				</div>
+				<div class="row">
+					 <div class="col-4">
+						<h3>Jobs</h3>
+						<!-- Side Menu -->
+						<ul class="side-menu">
+							<li ng-class="{activeSideMenu : activeJob == item}" class="side-menu__item" ng-repeat="item in sameTitle">
+								<a href="" ng-click="jobShow(item)">
+									<p class="side-menu__title">{{item.Title}}</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-8 description">
+						<!-- Job description -->
+						<h1>{{job.Title}}</h1>
+						<p>{{job.About[0].Description}}</p>
+						<h2>Level 70 Ability</h2>
+						<p>{{job.About[0].TopAbilites}}</p>
+					</div> 
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<p>Made by Tegan Barry</p>
+				<p>Using - HTML, CSS, AngularJS, Karma and Jasmine</p>
+			</div>
+		</footer>
+	</body>
+</html>
